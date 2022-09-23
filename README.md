@@ -18,22 +18,22 @@ Cambien al directorio que acaban de crear:
 ```console
 $ cd SC_UNAM_2022
 ```
-Create a new environment:
+Cree el nuevo ambiente de conda:
 
 ```console
 $ conda env create -f SC_UNAM_2022_env.yml
 ```
-Activad el nuevo ambiente conda:
+Activen el nuevo ambiente conda:
 
 ```console
 $ conda activate SC2022
 ```
-Verificad que el ambiente está bien instalado:
+Verifiquen que el ambiente está bien instalado:
 
 ```console
 $ conda env list
 ```
-El nombre del ambiente, ```SC2022```, debería aparecer en una lista. 
+El nombre del ambiente, ```SC2022```, debería aparecer en la lista. 
 
 ## testeando el ambiente de conda
 
