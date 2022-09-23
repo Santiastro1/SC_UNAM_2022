@@ -10,54 +10,54 @@ Se asume también que el estudiante tiene instalado en su ordenador el programa 
 Clonen el repositorio:
 
 ```console
-$ git clone https://github.com/Santiastro1/Athens_School_2022.git
+$ git clone https://github.com/Santiastro1/SC_UNAM_2022.git
 ```
 
-Change directory into the cloned repository:
+Cambien al directorio que acaban de crear:
 
 ```console
-$ cd Athens_School_2022
+$ cd SC_UNAM_2022
 ```
 Create a new environment:
 
 ```console
-$ conda env create -f Athens2022_env.yml
+$ conda env create -f SC_UNAM_2022_env.yml
 ```
-Activate the new environment:
+Activad el nuevo ambiente conda:
 
 ```console
-$ conda activate Athens2022
+$ conda activate SC2022
 ```
-Verify that the new environment was correctly installed:
+Verificad que el ambiente está bien instalado:
 
 ```console
 $ conda env list
 ```
-The name of the new environment, ```Athens2022```, should show up in the list. 
+El nombre del ambiente, ```SC2022```, debería aparecer en una lista. 
 
-## Testing the conda environment
+## testeando el ambiente de conda
 
-Before starting with the ```Athens2022``` we highly recommend you to test the conda environment you have just created. 
-First, try to open a ```jupyter notebook``` in your brownser.
+Antes de empezar a usar el ambiente de conda ```SC2022``` recomendamos que lo testeen.
+Para hacerlo, intenten abrir el ```jupyter notebook``` en su servidor web.
 
 ```console
 $ jupyter notebook
 ```
 
-Now, in order to test some of the python libraries, you will need to download extra files:
+Ahora, para comprobar que las librerías de python están bien instaladas deberéis descargar algunos nuevos archivos:
 
-### 1- Used by ```yt```: Data files from N-body simulations obtained using a large variety of numerical codes: https://yt-project.org/data/.
+### 1- Usado por ```yt```: Archivos de simulaciones N-cuerpos obtenidas usando gran variedad de códigos numéricos: https://yt-project.org/data/.
 
-Here we will usedata from ART and RAMSES numerical codes so we recommend you to download the following files and move them to the ```Athens_School_2022``` folder:
+Para empezar intetaremos leer y visualizar los resultados de simulaciones obtenidas usando ART y RAMSES. Descargaremos pués algunos archivos y los moveremos a nuestra carpeta de trabajo:
 
 http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz
 
 ```console
-$ mv ~/Downloads/sizmbhloz-clref04SNth-rs9_a0.9011.tar ~/Athens_School_2022/
+$ mv ~/Downloads/sizmbhloz-clref04SNth-rs9_a0.9011.tar ~/SC_UNAM_2022/
 ```
 
 ```console
-$ cd ~/Athens_School_2022/
+$ cd ~/SC_UNAM_2022/
 ```
 
 ```console
@@ -71,11 +71,11 @@ $ rm sizmbhloz-clref04SNth-rs9_a0.9011.tar
 http://yt-project.org/data/output_00080.tar.gz
 
 ```console
-$ mv ~/Downloads/output_00080.tar.gz ~/Athens_School_2022/
+$ mv ~/Downloads/output_00080.tar.gz ~/SC_UNAM_2022/
 ```
 
 ```console
-$ cd ~/Athens_School_2022/
+$ cd ~/SC_UNAM_2022/
 ```
 
 ```console
@@ -86,42 +86,17 @@ $ tar -zxvf output_00080.tar
 $ rm output_00080.tar
 ```
 
-### 2- Used by pynbody:
+Ahora pueden abrir el script de jupyter ```SC_UNAM_2022_envtest.ipynb``` en su navegador de internet preferido y correr cada una de las celdas para ver que las librerías de yt funcionan, así como el resto de librerías de ``Python3.7```.
 
-Download and extract the following files to your Athens_School_2022 folder
+Si consiguen que corran todas las celdas del jupyter notebook ya están preparados para empezar a trabajar bajo el ambiente conda que han creado.
 
-http://star.ucl.ac.uk/~app/testdata.tar.gz
+En el caso que hayan tenido problemas corriendo alguna de las celdas contacten con sroca(at)astro.unam.mx
 
-```console
-$ mv ~/Downloads/testdata.tar ~/Athens_School_2022/
-```
 
-```console
-$ cd ~/Athens_School_2022/
-```
+## Actualizar la instalación
+
+Probablemente necesitarán actualizar el ambiente conda que han creado y sus librerías```Athens2022```, para hacerlo tienen que:
 
 ```console
-$ tar -zxvf testdata.tar
+$ conda env update --name SC2022 -f SC_UNAM_2022_env.yml --prune
 ```
-
-```console
-$ rm testdata.tar
-```
-
-Now open the ```Athens2022_envtest.ipynb``` in the web brownser and run each one of the cells in order to test the yt, pynbody and ```Python3.7``` libraries installation.
-
-If you succeed on running all cells in this notebook, you are now ready to work on the ```Athens2022``` school hands-on sessions.
-
-If you have had problems on running any of the cells, please get in contact with sroca01 at ucm dot es, in order to have this problems solved before the school starts.
-
-## Updating installation
-
-Should you need to update an already existing ```Athens2022``` environment with a newer ```Athens2022_env..yml``` version:
-
-```console
-$ conda env update --name Athens2022 -f Athens2022_env..yml --prune
-```
-
-## Contact
-
-In case of trouble with the installation please contact Santi Roca-Fàbrega (sroca01 at ucm dot es) or open an issue [here](https://github.com/Santiastro1/Athens_School_2022/issues).
