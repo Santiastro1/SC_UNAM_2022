@@ -53,7 +53,7 @@ Para empezar intetaremos leer y visualizar los resultados de simulaciones obteni
 http://yt-project.org/data/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz
 
 ```console
-$ mv ~/Downloads/sizmbhloz-clref04SNth-rs9_a0.9011.tar ~/SC_UNAM_2022/
+$ mv ~/Downloads/sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz ~/SC_UNAM_2022/
 ```
 
 ```console
@@ -61,11 +61,11 @@ $ cd ~/SC_UNAM_2022/
 ```
 
 ```console
-$ tar -zxvf sizmbhloz-clref04SNth-rs9_a0.9011.tar
+$ tar -zxvf sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz
 
 ```
 ```console
-$ rm sizmbhloz-clref04SNth-rs9_a0.9011.tar
+$ rm sizmbhloz-clref04SNth-rs9_a0.9011.tar.gz
 ```
 
 http://yt-project.org/data/output_00080.tar.gz
